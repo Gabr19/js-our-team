@@ -1,6 +1,13 @@
 // MILESTONE 0:
 // Creare l'array di oggetti con le informazioni fornite.
 
+// MILESTONE 1:
+// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+
+
+//  MILESTONE 2:
+// Stampare le stesse informazioni su DOM sottoforma di stringhe
+
 const team = [
     {name : 'Wayne Barnett',
     role : 'Founder & CEO',
@@ -29,29 +36,29 @@ const team = [
 
 ];
 
-// MILESTONE 1:
-// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
-let key;
-
-for ( key in team ){
-     console.log(team[key])
-    
- }
-
-//  MILESTONE 2:
-// Stampare le stesse informazioni su DOM sottoforma di stringhe
+let cont = document.getElementById('container')
 
 
-    let cont = document.getElementById('container').innerHTML =  team[i, name]
+for(let i = 0 ; i < team.length ; i++){
 
 
 
-// for(let i = 0 ; i < team.length ; i++){
+    for ( let key in team[i]){
+         console.log(team[i][key])
+         container.innerHTML += team[i][key]
 
-//     // container.innerHTML = team{key}
-//     document.write(team[i])
+       
+     }
 
 
-// }
+}
+
+
+
+
+
+
+
+
 
 
